@@ -106,7 +106,7 @@ public class Scrabble {
 					else
 					{
 						score += wordScore(input);
-						System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points");
+						System.out.println(input + " earned " + wordScore(input) + " points. Score: " + score + " points\n");
 						hand = MyString.remove(hand, input);
 					}
 				}
@@ -117,7 +117,6 @@ public class Scrabble {
 		} else {
 			System.out.println("End of hand. Total score: " + score + " points");
 		}
-		HAND_SIZE = 10;
 	}
 
 	// Plays a Scrabble game. Prompts the user to enter 'n' for playing a new hand, or 'e'
@@ -149,8 +148,8 @@ public class Scrabble {
 		////testBuildingTheDictionary();  
 		////testScrabbleScore();    
 		////testCreateHands();  
-		///testPlayHands();
-		playGame();
+		testPlayHands();
+		//playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
@@ -176,8 +175,8 @@ public class Scrabble {
 	}
 	public static void testPlayHands() {
 		init();
-		//playHand("ocostrza");
-		//playHand("arbffip");
-		//playHand("aretiin");
+		playHand("runiczoo");
+		playHand("arbffip");
+		playHand("aretiin");
 	}
 }
